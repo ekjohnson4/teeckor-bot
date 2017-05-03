@@ -38,7 +38,7 @@ function postMessage(flag) {
                   "Do it.",
                   "When I was 3 months old, I planted my first apple tree. " +
                   "Its name was Pip.",
-                  "I'm going to watch Fant4stic tonite if you ladies want to join",
+                  "I'm going to watch Assassin's Creed tonite if you ladies want to join",
                   "I placed a baby seaturtle in the Cook Out deep fryer",
                   "Meep meep",
                   "Don't go to Chuy's. It's a horrible place to dine.",
