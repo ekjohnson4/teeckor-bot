@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /(Tucker)|(tucker)|(King)|(king)|(punk)|(rock)|(apple)|(reddit)|(dark)|(souls)|(movie)/
+      botRegex = /(Tucker)|(tucker)|(King)|(king)|(punk)|(rock)|(dark)|(souls)/
       botRegexb = /(shut up)|(Shut up)|(SHUT UP)/;
 
   //Tuck-messages
@@ -30,24 +30,19 @@ function postMessage(flag) {
   var botResponse, options, body, botReq, tuckQuoteBank;
 
   if(flag==true){
-    tuckQuoteBank = ["You don't own me",
-                  "Did you guys know popcorn is synthetic?",
-                  "You don't own me.",
-                  "Build the wall!",
-                  "CAN YOU DIG IT?!?",
-                  "Do it.",
-                  "When I was 3 months old, I planted my first apple tree. " +
-                  "Its name was Pip.",
-                  "I'm going to watch Assassin's Creed tonite if you ladies want to join",
+    tuckQuoteBank = ["Did you guys know popcorn is synthetic?",
+                  "I'm going to watch Justice League tonite if you ladies want to join",
                   "I placed a baby seaturtle in the Cook Out deep fryer",
-                  "Meep meep",
-                  "Don't go to Chuy's. It's a horrible place to dine.",
-                  "Hey, brother",
-                  "You won't",
+                  "Chuy's is better than Taco Mama.",
+                  "You won't.",
                   "Thin Mint Day is my favorite day of the year!",
                   "Tuckstreet's back. Alright!",
-                  "Breath of the Wild didn't live up to the hype.",
-                  "http://www.huffingtonpost.com/entry/baby-sloth-photos-costa-rica_us_572d01d3e4b016f37895df3f"];
+                  "Mario Odyssey is no Super Mario Bruddas 2.",
+                  "Waka waka.",
+                  "By god, that new Fall Out Boy record is ecstasy",
+                  "*Toad noises",
+                  "We have lots of Cardi B at Oz.",
+                  "Bustin' makes me feel good."];
 
     var tuckQuote = tuckQuoteBank[Math.floor(Math.random() * tuckQuoteBank.length)];
 
