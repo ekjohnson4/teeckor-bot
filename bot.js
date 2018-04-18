@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /(Tucker)|(tucker)|(King)|(king)|(punk)|(rock)|(dark)|(souls)/
+      botRegex = /(Tucker)|(King)|(punk)|(rock)|(dark)|(souls)/
       botRegexb = /(shut up)|(Shut up)|(SHUT UP)/;
 
   //Tuck-messages
@@ -30,9 +30,8 @@ function postMessage(flag) {
   var botResponse, options, body, botReq, tuckQuoteBank;
 
   if(flag==true){
-    tuckQuoteBank = ["Did you guys know popcorn is synthetic?",
-                  "I'm going to watch Justice League tonite if you ladies want to join",
-                  "I placed a baby seaturtle in the Cook Out deep fryer",
+    tuckQuoteBank = ["I can't believe it's not popcorn!",
+                  "I'm going to watch The Spongebob Movie tonite if you ladies want to join",
                   "Chuy's is better than Taco Mama.",
                   "You won't.",
                   "Thin Mint Day is my favorite day of the year!",
@@ -42,7 +41,8 @@ function postMessage(flag) {
                   "By god, that new Fall Out Boy record is ecstasy",
                   "*Toad noises",
                   "We have lots of Cardi B at Oz.",
-                  "Bustin' makes me feel good."];
+                  "Bustin' makes me feel good.",
+                  "Kubrick is a chump and Michael Bay made the best film of all time."];
 
     var tuckQuote = tuckQuoteBank[Math.floor(Math.random() * tuckQuoteBank.length)];
 
