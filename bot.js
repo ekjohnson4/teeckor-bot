@@ -30,18 +30,17 @@ function postMessage(flag) {
   var botResponse, options, body, botReq, tuckQuoteBank;
 
   if(flag==true){
-    tuckQuoteBank = ["I can't believe it's not popcorn!",
-                  "I'm going to watch Space Jam tonite if you ladies want to join",
+    tuckQuoteBank = ["I'm going to watch Space Jam tonite if you ladies want to join",
                   "Chuy's is better than Taco Mama.",
                   "You won't.",
-                  "Thin Mint Day is my favorite day of the year!",
+                  "Thin Mint Day is right around the corner!",
                   "Tuckstreet's back. Alright!",
                   "Supah Mario Bruddas 2! Game of tha year!",
                   "Waka waka.",
                   "By god, that new Fall Out Boy record is ecstasy >_<",
                   "We have lots of Cardi B at Oz.",
-                  "Bustin' makes me feel good!",
                   "I'm going to start hosting seminars on personalizing Tinder profiles.",
+                  "The new Titans trailer was #great.",
                   "Imma let y'all finish, but Kubrick is a chump and Michael Bay made the best film of all time."];
 
     var tuckQuote = tuckQuoteBank[Math.floor(Math.random() * tuckQuoteBank.length)];
