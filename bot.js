@@ -6,7 +6,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /(Tucker)|(King)|(dark)|(souls)/
+      botRegex = /(Tucker)|(dark)|(souls)/
       botRegexb = /(shut up)|(Shut up)|(SHUT UP)/;
 
   //Tuck-messages
@@ -30,17 +30,12 @@ function postMessage(flag) {
   var botResponse, options, body, botReq, tuckQuoteBank;
 
   if(flag==true){
-    tuckQuoteBank = ["I'm going to watch Space Jam tonite if you ladies want to join",
-                  "Chuy's is better than Taco Mama.",
-                  "You won't.",
-                  "Thin Mint Day is right around the corner!",
+    tuckQuoteBank = ["Chuy's is better than Taco Mama.",
                   "Tuckstreet's back. Alright!",
                   "Supah Mario Bruddas 2! Game of tha year!",
-                  "Waka waka.",
-                  "By god, that new Fall Out Boy record is ecstasy >_<",
-                  "We have lots of Cardi B at Oz.",
                   "I'm going to start hosting seminars on personalizing Tinder profiles.",
                   "The new Titans trailer was #great.",
+                  "Andrew Garfield was the best Spidey.",
                   "Imma let y'all finish, but Kubrick is a chump and Michael Bay made the best film of all time."];
 
     var tuckQuote = tuckQuoteBank[Math.floor(Math.random() * tuckQuoteBank.length)];
